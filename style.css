@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "myfont";
+    src: url(./font/Vazirmatn-VariableFont_wght.ttf) format('truetype'),
+    url(./font/Vazirmatn-Bold.ttf) format('truetype');
+    
+}
+body{
+    font-family: myfont;
+    background-color: #C4DEF7;
+}
+.user-setting{
+    display: flex;
+    position: relative;
+    left: 4rem;
+    bottom: 0.5rem;
+}
+#container{
+    width: 81%;
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+    
+    padding: 0 1rem;
+    justify-content: center;
+    margin: 10px auto;
+}
+ul,li{
+    list-style-type: none;
+}
+
+/* clm left:time,date,weather */
+#left{
+    flex-basis: 30%;
+    margin: 1rem 0; 
+    width: 100%;   
+}
+.clm-left{
+    background-color: white;
+    width: 100%;
+    border-radius: 24px;
+    height: 38.5vh;
+    padding: 10px;
+    display: flex;
+}
+#date{
+    width: 50%;
+    height: 100%;
+}
+.shamsi{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.islamicHijri{
+    display: flex;
+    font-size: 10px;
+    width: 51px;
+}
+.weatherInfo{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+   
+}
+.wather-text{
+    font-size: 14px;
+    direction: rtl;
+    margin-bottom: 10px;
+}
+.weather-deg{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.weather-augury{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.miladi{
+    font-size: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.data-time{
+    font-size: 10px;
+}
+.oghat{
+    width: 55%;
+    height: 100%;
+}
+.watch{
+    text-align: center;
+    color: steelblue;
+}
+.time-date-text{
+    display: flex;
+    font-size: 10px;
+}
+.time-text{
+    margin: 0;
+}
+.weather-title{
+    display: flex;
+    justify-content: center;
+}
+#cloud{
+    display: none;
+   }
+   .clouds{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(./image/cloud.png);
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+   #sun{
+    display: none;
+   }
+   .sunny{
+    display: block;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(./image/sunny.png);
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+/* end clm left */
+/* clm mid:boxes,search */
+#mid{
+    flex-basis: 47%;
+    margin: 1rem 0;          
+}
+.clm-mid{
+    width: 100%;
+    border-radius: 24px;
+    height: auto;
+}
+
+.box-mid-top{
+width: 100%;
+height: 13vh;
+background-color: white;
+border-radius: 24px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.box-mid-img{
+width: 28px;
+}
+#search{
+    width: 70%;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: end;
+}
+.shape-lens{
+    width: 45px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 2px;
+}
+.shape-lens>span{
+    color: white;
+    font-size: 20px;
+}
+.box-google{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.box-mid-bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap:16px ;
+    justify-content:center ;
+    margin-top: 1rem;
+}
+.boxes{
+    width: 4.2rem;
+    height: 5.3rem;
+    background-color: white;
+    border-radius: 24px;
+    text-align: center;
+}
+#earth{
+    display: none;
+}
+#app{
+    display: none
+    
+}
+.box6>span{
+    display: none;
+}
+.boxes span{
+    font-size: 70px;
+    color: silver;
+}
+.box-task{
+border: 1px solid;
+border-radius: 24px;
+margin: 5px;
+text-align: center;
+}
+#apps{
+    text-align: center;
+    padding: 9px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 42px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.apps-text{
+    font-size: 15px;
+    font-style: normal;
+}
+.box5>span{
+    display: none;
+}
+#earthtwo{
+    text-decoration: none; 
+    text-align: center;
+padding: 9px;
+color: black;
+display: flex;
+flex-direction: column;
+font-size: 42px;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+}
+.earth-text{
+    font-size: 15px;
+    font-style: normal;
+}
+/* end clm mid */
+
+/* clm right */
+#right{
+    flex-basis: 22%;
+    margin: 1rem 0;
+    margin-bottom: 40px;
+}
+.clm-right{
+    background-color: white;
+    width: 100%;
+    border-radius: 24px;
+    height: 100%;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.clm-right>h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#ulElem{
+    flex-basis: 88%;
+    direction: rtl;
+
+}
+.liElm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-text-box{
+    width: 12px;
+    height: 12px;
+    background-color: springgreen;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+.task-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.box-text{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: springgreen;
+    position: absolute;
+    right: 0;
+    margin-left: 5px;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+.text{
+    margin-right: 18px;
+}
+#inputElem{
+    width: 90%;
+    border-style: none;
+    text-align: end;
+    border: none;
+    }
+    p .material-symbols-outlined{
+        width:15px;
+        display: none;
+        cursor: pointer;
+        font-size: 17px;
+    }
+    p:hover>.material-symbols-outlined{
+       display: inline-block;
+    }
+    .delete{
+        margin-right: 3rem;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .add-todo{
+        cursor: pointer;
+    }
+ 
+    /* end clm right */
+
+  @media screen and (min-width:340px) and (max-width:768px) {
+   .user-setting{
+    display: flex;
+    position: none;
+    left: 0;
+    bottom: 0;
+   }
+    #container{
+    gap: 0;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+   }
+   #left{
+    flex-basis: auto;
+    margin-top: 6rem;
+   }
+   #mid{
+    flex-basis: auto;
+   }
+   .clm-left{
+    height: 29.5vh;
+   }
+   
+    .box-mid-top{
+        width: 91%;
+        position: absolute;
+        top: 33px;  
+        height: 10vh;
+        justify-content: center;
+    }
+    .box-mid-bottom{
+        align-items: center;
+    }
+    .boxes{
+        width: 8.5rem;
+    }
+    .box1{
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    #earth{
+        text-decoration: none; 
+        text-align: center;
+    padding: 9px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 42px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    }
+    .earth-text{
+        font-size: 15px;
+        font-style: normal;
+    }
+    .box1>span{
+        display: none;
+    }
+    .box2>span{
+        display: none;
+    }
+    .box5>span{
+        display: flex;
+        justify-content: center;
+    }
+    #earthtwo{
+        display: none;
+    }
+    .box6>span{
+        display: flex;
+        text-align: center;
+       justify-content: center;
+    }
+    #app{
+        flex-direction: column;
+        text-align: center;
+    padding: 9px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 42px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    }
+    #apps{
+        display: none;
+        
+    }
+  }
